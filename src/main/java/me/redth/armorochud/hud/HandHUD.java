@@ -3,10 +3,10 @@ package me.redth.armorochud.hud;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
-public class MainhandHUD extends SingleItemHud {
+public class HandHUD extends SingleItemHud {
     private static final ItemStack exampleItem = new ItemStack(Items.diamond_sword);
 
-    public MainhandHUD() {
+    public HandHUD() {
         super(0, 492);
     }
 
