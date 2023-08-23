@@ -23,7 +23,7 @@ public abstract class ItemHUD extends Hud {
         if (item == null) return;
 
         GlStateManager.pushMatrix();
-        GlStateManager.translate(x, y, 100F);
+        GlStateManager.translate(x, y, 100);
         GlStateManager.scale(scale, scale, 1.0);
 
         drawItem(item);
@@ -61,5 +61,6 @@ public abstract class ItemHUD extends Hud {
         RenderHelper.disableStandardItemLighting();
         GlStateManager.disableBlend();
         GlStateManager.disableRescaleNormal();
+        GlStateManager.enableAlpha();
     }
 }
